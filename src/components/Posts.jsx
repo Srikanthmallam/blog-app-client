@@ -21,7 +21,7 @@ const Posts = () => {
       setIsLoading(false);
     };
     fetchPosts();
-  });
+  }, []);
 
   if (isLoading) {
     return <Loader />;

@@ -22,7 +22,7 @@ const Authors = () => {
       setIsLoading(false);
     };
     getAuthors();
-  }, []);
+  });
 
   if (isLoading) {
     return <Loader />;

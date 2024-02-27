@@ -24,7 +24,7 @@ const AuthorPosts = () => {
       setIsLoading(false);
     };
     fetchPosts();
-  }, []);
+  }, [id]);
 
   if (isLoading) {
     return <Loader />;

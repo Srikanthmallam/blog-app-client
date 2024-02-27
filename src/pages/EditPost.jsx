@@ -23,7 +23,7 @@ const EditPost = () => {
     if (!token) {
       navigate("/login");
     }
-  });
+  }, [token, navigate]);
 
   const PostCategories = [
     "uncategorized",
@@ -111,7 +111,7 @@ const EditPost = () => {
 
           <input
             type="file"
-            onChange={(e) => setTitle(e.target.files[0])}
+            onChange={(e) => setThumbnail(e.target.files[0])}
             accept="png, jpg ,jpeg"
             autoFocus
           />

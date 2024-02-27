@@ -41,7 +41,7 @@ const Dashboard = () => {
       setIsLoading(false);
     };
     getAuthorPosts();
-  }, [id]);
+  }, [id, token]);
 
   if (isLoading) {
     return <Loader />;

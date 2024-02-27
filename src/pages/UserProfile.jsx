@@ -61,7 +61,7 @@ const UserProfile = () => {
       setAvatar(avatar);
     };
     getUser();
-  }, [id]);
+  }, [id, token]);
 
   const updateUser = async (e) => {
     e.preventDefault();

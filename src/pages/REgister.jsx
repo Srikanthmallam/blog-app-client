@@ -26,7 +26,6 @@ const REgister = () => {
         `${process.env.REACT_APP_BASE_URL}/users/register`,
         userData
       );
-      console.log(response);
       const newUSer = await response.data;
       if (!newUSer) {
         setError("user couldn't register please try again");
